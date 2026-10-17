@@ -1,0 +1,98 @@
+/* style.css */
+:root {
+    --warna-utama: #1e293b;
+    --warna-aksen: #0ea5e9;
+    --warna-bg: #f8fafc;
+    --warna-teks: #334155;
+    --putih: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--warna-bg);
+    color: var(--warna-teks);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--warna-utama);
+    color: var(--putih);
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--putih);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover, nav ul li a.aktif {
+    color: var(--warna-aksen);
+    font-weight: 600;
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    background: var(--putih);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+h1 {
+    color: var(--warna-utama);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--warna-utama);
+    color: var(--putih);
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}

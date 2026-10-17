@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Holiday - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .gallery-item {
+            width: 250px;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .gallery-item p {
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #334155;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Portofolio Saya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="myHoliday.html" class="aktif">My Holiday</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Holiday Experience</h1>
+        <p>Holidays are the best time to unwind from the daily academic routine. On this page, I share some of my travel memories and memorable places I have visited.</p>
+
+        <h2 style="margin-top: 2rem;">Holiday Photo Gallery</h2>
+        <p>Here are some pictures from my trips! :</p>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/SQT7VX5W/Whats-App-Image-2026-10-17-at-22-08-34.jpg" alt="Photobooth of me and my bestie">
+                <p>Me and seveny in braga took some photobooth</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/rpNPQSv6/Whats-App-Image-2026-10-17-at-22-19-03.jpg" alt="Prambanan Tample">
+                <p>Me and my fam in front of prambanan tample.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/SKxv1Xq1/Whats-App-Image-2026-10-17-at-22-19-04.jpg" alt="Beach">
+                <p>Exploring the beach in sawarna.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/fT5728bc/Whats-App-Image-2026-10-17-at-22-19-03-(1).jpg" alt="Jogja Photoshot">
+                <p>Taking  family photos in jogja.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/wx2sg7dD/Whats-App-Image-2026-10-17-at-22-19-05.jpg" alt="Forrest">
+                <p>woodlane escape in bogor.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/HnknV9Cb/Whats-App-Image-2026-10-17-at-22-19-04-(1).jpg" alt="hiking">
+                <p>hiking to mount luhur.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/nrWFM8kG/Whats-App-Image-2026-10-17-at-22-19-04-(2).jpg" alt="swimming">
+                <p>swimming with my friends at go wet! bekasi.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Pemrograman Web I</p>
+    </footer>
+
+</body>
+</html>
